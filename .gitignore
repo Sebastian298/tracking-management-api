@@ -1,0 +1,44 @@
+# Build output (Directory.Build.props uses artifacts/)
+bin/
+obj/
+artifacts/
+publish/
+
+# Test and coverage
+TestResults/
+*.trx
+*.coverage
+coverage.json
+coverage.cobertura.xml
+*.received.*
+
+# Logs (Serilog file sink)
+logs/
+*.log
+
+# Visual Studio / Rider / VS user files
+.vs/
+.idea/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Local secrets and environment (user secrets live outside the repo)
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings.*.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json

@@ -1,0 +1,58 @@
+@tracking_management_api_HostAddress = http://localhost:5134
+
+GET {{tracking_management_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{tracking_management_api_HostAddress}}/api/loads/direct
+Accept: application/json
+
+###
+
+GET {{tracking_management_api_HostAddress}}/api/loads/cached
+Accept: application/json
+
+###
+
+POST {{tracking_management_api_HostAddress}}/api/safety-incidents/direct
+Content-Type: application/json
+
+{
+  "tripId": "TRIP00036079",
+  "truckId": "TRK00006",
+  "driverId": "DRV00006",
+  "incidentDate": "2023-04-09T14:00:00",
+  "incidentType": "Moving Violation",
+  "locationCity": "Columbus",
+  "locationState": "PA",
+  "atFaultFlag": true,
+  "injuryFlag": false,
+  "vehicleDamageCost": 100.5,
+  "cargoDamageCost": 50.25,
+  "preventableFlag": true,
+  "description": "Severe incident involving equipment"
+}
+
+###
+
+POST {{tracking_management_api_HostAddress}}/api/safety-incidents/queued
+Content-Type: application/json
+
+{
+  "tripId": "TRIP00036079",
+  "truckId": "TRK00006",
+  "driverId": "DRV00006",
+  "incidentDate": "2023-04-09T14:00:00",
+  "incidentType": "Moving Violation",
+  "locationCity": "Columbus",
+  "locationState": "PA",
+  "atFaultFlag": true,
+  "injuryFlag": false,
+  "vehicleDamageCost": 100.5,
+  "cargoDamageCost": 50.25,
+  "preventableFlag": true,
+  "description": "Severe incident involving equipment"
+}
+
+###

@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/consumers/">
+    <Project Path="../consumers/safety-incident-consumer/safety-incident-consumer.csproj" />
+    <Project Path="../consumers/safety-incident-consumer.Tests/safety-incident-consumer.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/tracking-management-api.Tests/tracking-management-api.Tests.csproj" />
+  </Folder>
+  <Project Path="tracking-management-api.csproj" />
+</Solution>
